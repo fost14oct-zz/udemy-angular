@@ -1,0 +1,16 @@
+
+<div *ngIf="mostrar">
+<p>
+  Autor : {{frase.Autor}}
+</p>
+<p>
+  Frase : {{frase.mensaje}}
+</p>
+</div>
+
+<button (click)="mostrar = !mostrar">APARECE/DESAPARECE</button>
+
+
+<ul>
+  <li *ngFor="let personaje of personajes; let i = index">{{ i + 1 }} - c {{personaje}}</li>
+</ul>
